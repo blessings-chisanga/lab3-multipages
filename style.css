@@ -1,4 +1,4 @@
-/* ====== Reset and Global Styles ====== */
+/* ==================== Default and Global Styles ======================= */
 * {
     margin: 0;
     padding: 0;
@@ -7,34 +7,57 @@
 }
 
 body {
-    line-height: 1.6;
-    background: #554747;
-    padding: 20px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000000; 
+    padding: 30px;
 }
 
-/* ====== Navigation ====== */
+main{
+    color: #ffffff;
+}
+
+
+/* ===================== Navigation Bar Styles ======================== */
 nav ul {
     list-style: none;
     display: flex;
-    background: #131313;
+    background: #ffffff;
     padding: 10px;
-    justify-content: center;
+    margin-top: 20px;
+    justify-content: space-between;
+    margin-bottom: 10px;
     border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: rgb(253, 253, 253);
-    text-decoration: none;
+    align-items: center;
     
 }
 
-/* ====== Hero Section (For Index Page) ====== */
+nav ul li {
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif
+}
+.nav-button button {
+    padding: 10px 20px; /* Padding for the button */
+    font-size: 16px; /* Font size */
+    color: white; /* Text color */
+    background-color: #000000; /* Button background color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.nav-button button:hover {
+    background-color: #cde859; /* Darker blue on hover */
+}
+
+/* ========================== Hero Section (For Index Page) =========================== */
 .hero {
     font-size: 65px;
     text-align: center;
@@ -42,6 +65,7 @@ nav ul li a {
     background: radial-gradient(ellipse, #649e8f, #22457d);
     color: white;
     transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 10px;
 }
 
 .hero:hover {
@@ -50,7 +74,7 @@ nav ul li a {
 
 }
 
-/* ====== Flexbox Layout (For Index Page) ====== */
+/* ========================== Flexbox Layout (For Index Page) ============================ */
 .flex-container {
     display: flex;
     justify-content: space-between;
@@ -58,11 +82,17 @@ nav ul li a {
     margin-top: 20px;
 }
 
+article{
+    height: fit-content;
+}
+
 article, aside {
+    
     flex: 1;
-    background: white;
-    padding: 20px;
+    background: rgb(255, 255, 255);
+    margin: 40px;
     border-radius: 5px;
+    height: 200px;
 }
 
 /* ====== Grid Layout (For Services Page) ====== */
@@ -75,12 +105,12 @@ article, aside {
 }
 
 .service-card {
-    color: #131313;
-    background: white;
+    color: #ffffff;
+    background: rgb(225, 89, 89);
     padding: 20px;
     text-align: center;
     border-radius: 5px;
-    border: 1px solid #ddd;
+    border: 1px solid #cdcdcd;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -96,16 +126,25 @@ article, aside {
     border-radius: 5px;
 }
 
-/* ====== Form Styling (For Contact Page) ====== */
-main {
-color: rgb(255, 252, 252);
+/* ====== Grid Layout (For index Page) ====== */
+.service-card-home {
+    height: auto;
+    color: #000000;
+    background: #bdc13c;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    border: 3px solid #ddd;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #454242; /* Light background for contrast */
+.service-card-home:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+
+/* ====================== Contact page (form styles)====================== */
 
 .contact-form {
     max-width: 600px; /* Limit the width of the form */
@@ -121,6 +160,14 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+#response{
+    display: none; 
+    color: green;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 5px;
+}
+
 fieldset {
     border: none; /* Remove default border */
     padding: 0; /* Remove default padding */
@@ -129,7 +176,7 @@ fieldset {
 legend {
     font-size: 2em; /* Larger font size for the legend */
     margin-bottom: 20px;
-    color: #333;
+    color: #000000;
     
 }
 
@@ -178,3 +225,20 @@ button {
 button:hover {
     background-color: #e2922f; /* Darker blue on hover */
 }
+
+footer{
+    color: #ddd;
+    margin-top: 80px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*==================Dark Theme=================*/
+body.light-theme {
+    background-color: #43b59e;
+}
+
+main.light-theme{
+    color: #000000;
+}
+

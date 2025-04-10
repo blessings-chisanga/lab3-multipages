@@ -1,50 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li class="nav-button">
+            <button id="theme-toggle">Toggle Theme</button>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <h1>Get in touch with us</h1>
+      <h1>Get in touch with us here!</h1>
 
-        <section class="contact-form">
-            <form>
-                <fieldset>
-                    <legend>Send us a message</legend>
+      <section class="contact-form">
+        <form id="contactForm">
+          <fieldset>
+            <legend>Send us a message</legend>
 
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
 
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
 
-                    <label for="subject">Subject:</label>
-                    <input type="text" id="subject" name="subject" required>
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required />
 
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <p id="response"></p>
 
-                    <button type="submit">Send</button>
-                </fieldset>
-            </form>
-        </section>
+            <button type="submit">Send</button>
+          </fieldset>
+        </form>
+      </section>
     </main>
 
     <footer>
-        <p>&copy; TransitionFX @2025</p>
+      <p>&copy; TransitionFX @2025</p>
     </footer>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
